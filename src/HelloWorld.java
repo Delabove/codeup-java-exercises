@@ -114,10 +114,10 @@ public class HelloWorld {
 //        Rewrite the following expressions using the relevant shorthand
 //        assignment operators:
 
-        int x = 5;
+//        int x = 5;
         System.out.println(++x);
 
-        int three = Integer.parseInt("456");
+//        int three = Integer.parseInt("456");
 
         x = 10;
 //        x += 5;
