@@ -103,9 +103,14 @@ public class HelloWorld {
 //    'bootstrap')at HelloWorld.main(HelloWorld.java:98)
 
 
+//        How is the above example different from the code block below?
+        int three = (int) "three";
 
+//         the quotations make it a string.
 
-
+//        What are the two different types of errors we are observing?
+//            cannot cast a strin to an integer and
+//            cannot cast a string to a class;
 
 
 
