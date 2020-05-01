@@ -13,5 +13,10 @@ public class HelloWorld {
 
         String myString = "This is my string.";
         System.out.println("This is my string value: " + myString);
+
+        //Change your code to assign a character value to myString. What do you notice?
+//        char myString = "This is my string.";
+//        System.out.println("This is my string value: " + myString);
+        //Red squiggly lines -will not work because it is a string.
     }
 }
