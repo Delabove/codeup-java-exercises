@@ -18,5 +18,35 @@ public class HelloWorld {
 //        char myString = "This is my string.";
 //        System.out.println("This is my string value: " + myString);
         //Red squiggly lines -will not work because it is a string.
+
+        //Change your code to assign the value 3.14159 to myString.
+        // What happens?
+
+//        String myString = 3.14159;
+//        System.out.println("This is my string value: " + myString);
+//           //Red squiggly lines -will not work because it requires a string not a double.
+
+
+        //Declare an long variable named myNumber, but do not assign
+        // anything to it.Next try to print out myNumber to the console.
+        // What happens?
+
+//        Error:(34, 25) java: illegal start of expression
+
+//        Change your code to assign the value 3.14 to myNumber.
+//        What do you notice? stays red because we did no add L
+
+//        Change your code to assign the value 123L (Note the 'L'
+//        at the end) to myNumber.
+
+
+
+        long myNumber = 123L;
+        System.out.println("This is my number value: " + myNumber);
+
+
+
+
+
     }
 }
