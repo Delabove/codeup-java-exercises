@@ -66,5 +66,24 @@ public class HelloWorld {
 
         System.out.println("This is my number value: " + myNumber);
 
+
+//        Copy and paste the following code blocks one at a time and
+//        execute them.
+
+//        int x = 5;
+//        System.out.println(x++);
+//        System.out.println(x);
+
+        int x = 5;
+        System.out.println(++x);
+        System.out.println(x);
+
+//        What is the difference between the above code blocks?
+//        Explain why the code outputs what it does.
+//        in the first block we are incrementing after the variable which
+//                does not change the original value;
+//        in the last block, we are incrementing before the variable which
+//                changes the value of the variable.
+
     }
 }
