@@ -104,15 +104,32 @@ public class HelloWorld {
 
 
 //        How is the above example different from the code block below?
-        int three = (int) "three";
+//        int three = (int) "three";
 
 //         the quotations make it a string.
 
 //        What are the two different types of errors we are observing?
 //            cannot cast a strin to an integer and
 //            cannot cast a string to a class;
+//        Rewrite the following expressions using the relevant shorthand
+//        assignment operators:
 
+        int x = 5;
+        System.out.println(++x);
 
+        int three = Integer.parseInt("456");
 
+        x = 10;
+//        x += 5;
+        int y = 2;
+//        y *= x;
+        x /= y;
+        y -= x;
+        System.out.println(x);
+        System.out.println(y);
+
+        x = Integer.MAX_VALUE;
+        x++;
+        System.out.println("MAXVAL + 1 " + x);
     }
 }
