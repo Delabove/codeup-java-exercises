@@ -41,12 +41,16 @@ public class HelloWorld {
 
 
 
-        long myNumber = 123L;
+//        long myNumber = 123L;
+//        System.out.println("This is my number value: " + myNumber);
+
+//        Change your code to assign the value 123 to myNumber.
+        long myNumber = 123;
         System.out.println("This is my number value: " + myNumber);
-
-
-
-
+//        Why does assigning the value 3.14 to a variable declared as a
+//        long not compile, but assigning an integer value does?
+//        Because it is a short integer and does not have a decimal
+//                value;
 
     }
 }
