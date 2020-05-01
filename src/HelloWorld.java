@@ -85,5 +85,29 @@ public class HelloWorld {
 //        in the last block, we are incrementing before the variable which
 //                changes the value of the variable.
 
+//        Try to create a variable named class. What happens?
+//        class myClass = 123;
+//        Says local class never used
+
+//         Object is the most generic type in Java. You can assign any
+//         value to a variable of type Object. What do you think
+//         will happen when the following code is run?
+
+        String theNumberThree = "three";
+        Object o = theNumberThree;
+        int three = (int) o;
+
+//        Exception in thread "main" java.lang.ClassCastException: class
+//        java.lang.String cannot be cast to class java.lang.Integer (java.lang.String
+//                and java.lang.Integer are in module java.base of loader
+//    'bootstrap')at HelloWorld.main(HelloWorld.java:98)
+
+
+
+
+
+
+
+
     }
 }
