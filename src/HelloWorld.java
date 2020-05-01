@@ -34,7 +34,8 @@ public class HelloWorld {
 //        Error:(34, 25) java: illegal start of expression
 
 //        Change your code to assign the value 3.14 to myNumber.
-//        What do you notice? stays red because we did no add L
+//        What do you notice?
+//        stays red because we did no add L
 
 //        Change your code to assign the value 123L (Note the 'L'
 //        at the end) to myNumber.
@@ -45,12 +46,25 @@ public class HelloWorld {
 //        System.out.println("This is my number value: " + myNumber);
 
 //        Change your code to assign the value 123 to myNumber.
-        long myNumber = 123;
-        System.out.println("This is my number value: " + myNumber);
+//        long myNumber = 123;
+//        System.out.println("This is my number value: " + myNumber);
+
 //        Why does assigning the value 3.14 to a variable declared as a
 //        long not compile, but assigning an integer value does?
+
 //        Because it is a short integer and does not have a decimal
 //                value;
+
+
+        //Change your code to declare myNumber as a float. Assign the value
+        // 3.14 to it.What happens? What are two ways we could fix this?
+
+//        stays red because we need to use casting.. put float on opposite
+//        sidt of variable
+
+       float myNumber = (float)3.14;
+
+        System.out.println("This is my number value: " + myNumber);
 
     }
 }
