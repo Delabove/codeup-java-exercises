@@ -29,29 +29,58 @@ public class ControlFlowExercises {
         }
 
         Scanner sc = new Scanner(System.in);
+
         System.out.println("What number would you like to go up to?");
-        int number =  sc.nextInt();
+
+        int number = sc.nextInt();
+
         System.out.println("Here's your table!");
-            int NMAX = 3;
-            double userMax = number;
 
-            for(int n = 1; n<= NMAX; n++){
-//                System.out.printf("%10d", n);
-            }
-        System.out.println();
-            for (int n = 1; n <= NMAX;n++){
-//                System.out.printf("%10s", "x ");
+        int tableColumn = 3;
+        double userMax = number;
 
-            }
+        for (int n = 1; n <= tableColumn; n++) {
+
+        }
         System.out.println();
 
-            for(double x = 1; x <= userMax; x++){
-                for(int n = 1; n <= NMAX; n++) {
-                    System.out.printf("%10.0f", Math.pow(x, n));
+        for (int n = 1; n <= tableColumn; n++) {
 
-                }
-                System.out.println();
+
+        }
+        System.out.println();
+
+        for (double x = 1; x <= userMax; x++) {
+            for (int n = 1; n <= tableColumn; n++) {
+                System.out.printf("%10.0f", Math.pow(x, n));
+
             }
+            System.out.println();
+        }
+
+
+
+        Scanner userInput = new Scanner(System.in);
+
+        System.out.println("Enter your score from 0 to 100.");
+
+        int numberGrade = userInput.nextInt();
+
+        System.out.println("You chose " + numberGrade + ".");
+
+        System.out.println("Would you like to continue? [y/n]");
+
+        if (numberGrade >= 90) {
+            System.out.println("Your score is " + numberGrade + " which is an A");
+        } else if (numberGrade >= 80){
+            System.out.println("Your score is " + numberGrade + " which is an B");
+        } else if (numberGrade >= 67){
+            System.out.println("Your score is " + numberGrade + " which is an C");
+        } else if (numberGrade >= 60){
+            System.out.println("Your score is " + numberGrade + " which is an D");
+        }else if (numberGrade >= 0){
+            System.out.println("Your score is " + numberGrade + " which is an F.");
+        }
 
 
     }
