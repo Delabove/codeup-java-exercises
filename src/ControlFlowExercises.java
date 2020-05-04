@@ -5,7 +5,7 @@ public class ControlFlowExercises {
 //        System.out.println("Hello");
 
 
-        for(int i = 0; i <= 100; i += 2) {
+        for(long i = 2L; i <= 1000000L; i *= i) {
             System.out.println(i);
 
         }
