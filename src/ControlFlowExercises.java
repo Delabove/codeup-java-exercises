@@ -3,13 +3,13 @@ public class ControlFlowExercises {
     public static void main(String args[]) {
 
 //        System.out.println("Hello");
-        int i = 100;
+        long i = 2L;
 
         do{
 
             System.out.println("Do While: " + i);
-            i-= 5;
-        } while (i >= -10); {
+            i *= i;
+        } while (i < 1000000L); {
             System.out.println("Do while complete!");
 
         }
