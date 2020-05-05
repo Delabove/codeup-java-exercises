@@ -80,7 +80,7 @@ public class ControlFlowExercises {
 //        System.out.println();
 
 //douglas answer
-        3. table of powers
+//        3. table of powers
 //        Scanner scanner = new Scanner(System.in);
 //
 //        boolean userContinues = true;
