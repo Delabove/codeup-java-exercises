@@ -10,17 +10,18 @@ public static void main (String args[]){
 //    He answers 'Whatever.' to anything else.
 
     Scanner scanner = new Scanner(System.in);
-
-    String userQuestion = scanner.nextLine();
+    System.out.println("What will you say to Bob?");
+    String userQuestion = scanner.nextLine().trim();
+    System.out.println("userQuestion = " + userQuestion);
 
     if( userQuestion.endsWith("?")){
         System.out.println("Sure.");
     } else if( userQuestion.endsWith("!")){
-        System.out.println("Whoa, chill out! ");
+        System.out.println("Whoa, chill out!");
     } else if( userQuestion.equals("")){
-        System.out.println("Fine. Be that way! ");
+        System.out.println("Fine. Be that way!");
     } else {
-        System.out.println("Whatever. ");
+        System.out.println("Whatever.");
     }
 
 
