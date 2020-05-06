@@ -11,15 +11,15 @@ public class MethodsExercises {
 //        System.out.println(multiplication(1, 2));
 //        System.out.println(division(4, 2));
 //        System.out.println(modulus(4, 2));
-////        System.out.println(divideByZero(4, 0));
+////      System.out.println(divideByZero(4, 0));
 //        System.out.println(getInteger(1, 10));
 //
 //        Scanner scanner = new Scanner(System.in);
 //        System.out.print("Enter a number between 1 and 10: ");
 //        long userInput = scanner.nextInt();
 //        System.out.println("You Entered " + userInput);
-        System.out.println("How many sides of the dice? ");
-        System.out.println(rollOfTheDice());
+          System.out.println("How many sides of the dice? ");
+          System.out.println(rollOfTheDice());
 
 
 //        factorial test
@@ -120,7 +120,7 @@ public class MethodsExercises {
 
     public static int rollOfTheDice() {
         Scanner scanner = new Scanner(System.in);
-//        System.out.print("How many sides are there to a dice ");
+
         int userInput = scanner.nextInt();
 
         String again = "y";
@@ -138,7 +138,7 @@ public class MethodsExercises {
             System.out.print("Roll them again (y = yes)? ");
             again = scanner.nextLine();
             userInput = rollOfTheDice();
-//           rollOfTheDice();
+
         }
         return userInput;
     }
