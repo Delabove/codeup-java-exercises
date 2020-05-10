@@ -11,31 +11,34 @@ public class Person {
 
     private String name;
 
+    public Person(String aName){
+        this.setName(aName);
+    }
 
 //     returns the person's name
     public String getName(){
-        return String.format("My name is %s!", name) ;
+        return this.name;
     }
 //
     // changes the name property to the passed value
-    public void setName(String name){
-        System.out.println("My name is " + name + "!");
+    public void setName(String aName){
+        this.name = aName;
 
     }
 //
 //    // prints a message to the console using the person's name
     public void sayHello(){
-        System.out.printf("My name is %s!", name);
+        System.out.printf("Hello from " + this.getName());
 
     }
 
      public static void main(String[] args) {
-    Person delayne = new Person();
-    delayne.name = "DeLayne";
+    Person delayne = new Person("DeLayne");
+//    delayne.name = "DeLayne";
 
          delayne.sayHello();
          System.out.println(delayne.getName());
-         delayne.setName(delayne.name);
+//         delayne.setName(delayne.name);
 
 //         Person person1 = new Person();
 //         Person person2 = new Person();
