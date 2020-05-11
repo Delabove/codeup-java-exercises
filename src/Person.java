@@ -28,7 +28,7 @@ public class Person {
 //
 //    // prints a message to the console using the person's name
     public void sayHello(){
-        System.out.printf("Hello from " + this.getName());
+        System.out.printf("Hello from " + getName());
 
     }
 
@@ -38,7 +38,8 @@ public class Person {
 
          delayne.sayHello();
          System.out.println(delayne.getName());
-//         delayne.setName(delayne.name);
+         delayne.setName("Jacques");
+         delayne.sayHello();
 
 //         Person person1 = new Person();
 //         Person person2 = new Person();
