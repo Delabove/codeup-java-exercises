@@ -11,6 +11,7 @@ public class ArraysExercises {
 
 //      What happens when you run the following code? Why
 //      is Arrays.toString necessary?
+
         int[] numbers = {1, 2, 3, 4, 5};
         System.out.println(Arrays.toString(numbers));
 
@@ -40,16 +41,19 @@ public class ArraysExercises {
             System.out.println(personArray[i]);
         }
 
-//        String[] newAddedPersonArray = addPerson(Person, "Jade");
-//        System.out.println(Arrays.toString(newAddedPersonArray));
+//        1.3 It should return an array whose length is 1 greater than the
+//    passed array, with the passed person object at the end of the array.
+
+
+        String[] newAddedPersonArray = addPerson(personArray, "Jade");
+        System.out.println(Arrays.toString(newAddedPersonArray));
 
     }
 
-//    Create a static method named addPerson.
+//   1.3 Create a static method named addPerson.
 //    It should accept an array of Person objects,
 //    as well as a single person object to add to the passed array.
-//    It should return an array whose length is 1 greater than the
-//    passed array, with the passed person object at the end of the array.
+//
 
     public static String[] addPerson(String[] personArray, String aName){
 
@@ -61,8 +65,7 @@ public class ArraysExercises {
         for(String n : addedPersonArray){
             System.out.println(n);
         }
-
-    return addedPersonArray;
+        return addedPersonArray;
     }
 
 
