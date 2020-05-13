@@ -119,8 +119,17 @@ public static void hashMapTest(){
 HashMap<Long, Person> githubUsernames = new HashMap<>();
     githubUsernames.putIfAbsent(1L, new Person("Jacques", "Boutte", true ));
     githubUsernames.putIfAbsent(2L, new Person("DeLayne", "LaBove", false ));
-    
-    
+    githubUsernames.putIfAbsent(3L, new Person("DeLayne", "LaBove", false ));
+
+//    to remove a name
+
+//    githubUsernames.remove(3L);
+
+//    communicate deleted name
+
+    Person deleteRecord = githubUsernames.remove(3L);
+    System.out.println("deleteRecord.getFirstName() = " + deleteRecord.getFirstName());
+
 //    print the id and full name of each person; long doesnt have to exactly match Long will
 //    explain later
 
@@ -145,7 +154,10 @@ for(Long key : githubUsernames.keySet()){
     System.out.println("githubUsernames = " + githubUsernames.get(key).getFirstName());
 }
 
+//clear and empty
 
+githubUsernames.clear();
+    System.out.println("githubUsernames.isEmpty() = " + githubUsernames.isEmpty());
 }
 
 
