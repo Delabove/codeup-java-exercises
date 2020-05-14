@@ -28,10 +28,10 @@ public Student(String name){
     // returns the average of the students grades
     public double getGradeAverage(){
         int sumOfAllGrades = 0;
-       for(int grade :  grades ){
+       for(int grade :  this.grades ){
            sumOfAllGrades += grade;
        }
-       return sumOfAllGrades / grades.size();
+       return sumOfAllGrades / this.grades.size();
     }
 
 
