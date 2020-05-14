@@ -18,11 +18,11 @@ public Student(String name){
 
     // adds the given grade to the grades property
     public void addGrade(int grade){
-        grades.add(grade);
+        this.grades.add(grade);
     }
 
-    public void getGrades(){
-        grades.put();
+    public ArrayList<Integer> getGrades() {
+        return this.grades;
     }
 
     // returns the average of the students grades
