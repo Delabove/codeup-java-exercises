@@ -1,10 +1,41 @@
+import oop.Person;
 import org.w3c.dom.ls.LSOutput;
 
 import javax.crypto.spec.PSource;
-//
-//import java.util.Arrays;
-//
-//public class ArraysExercises {
+
+import java.util.Arrays;
+
+public class ArraysExercises {
+    public static void main(String[] args) {
+        int[] numbers = {1, 2, 3, 4, 5};
+        System.out.println(Arrays.toString(numbers));
+
+//        Person1[] newPeople = new Person1[3];
+//        System.out.println("newPeople = " + Arrays.toString(newPeople));
+
+//        newPeople[0] = new Person1("Jacques");
+//        newPeople[1] = new Person1("Chuckie");
+//        newPeople[2] = new Person1("Tandy");
+
+        Person1[] newPeople = {new Person1("Jacques"), new Person1("Chuckie"), new Person1("Tandy")};
+
+        newPeople = addPerson(newPeople, new Person1("Grayson"));
+
+        for (Person1 person : newPeople) {
+            System.out.println(person.getName());
+        }
+    }
+
+    public static Person1[] addPerson(Person1[] newPeople, Person1 person) {
+        Person1[] newPerson = Arrays.copyOf(newPeople, newPeople.length + 1);
+        newPerson[newPerson.length - 1] = person;
+        return newPerson;
+    }
+
+
+}
+
+
 //
 //
 //
