@@ -23,7 +23,7 @@ public class Input {
 
     public int getInt(int min, int max) {
         System.out.println("Give me a number between " + min + " and " + max + ":");
-        int aNumber = Integer.parseInt(scanner.nextLine());
+        int aNumber = Integer.parseInt(getString());
         if (aNumber < min || aNumber > max) {
             System.out.println("Number is outside of the range, try again.");
             return getInt(min, max);
@@ -33,13 +33,13 @@ public class Input {
 
     public int getInt() {
         System.out.println("Give me an integer: ");
-        return Integer.parseInt(scanner.nextLine());
+        return Integer.parseInt(getString());
 
     }
 
     public double getDouble(double min, double max) {
         System.out.println("Give me a decimal between " + min + " and " + max);
-        double aDecimal = Double.parseDouble(scanner.nextLine());
+        double aDecimal = Double.parseDouble(getString());
         if (aDecimal < min || aDecimal > max) {
             System.out.println("Number is outside of the range, try again.");
             return getDouble(min, max);
@@ -49,6 +49,6 @@ public class Input {
 
     public double getDouble() {
         System.out.println("Give me a decimal: ");
-        return Double.parseDouble(scanner.nextLine());
+        return Double.parseDouble(getString());
     }
 }
