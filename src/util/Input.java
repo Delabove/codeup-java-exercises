@@ -36,7 +36,8 @@ public class Input {
     }
 
     public int getInt(){
-        return 0;
+        System.out.println("Give me an integer:");
+        return Integer.parseInt(scanner.nextLine());
     }
 
     public double getDouble(double min, double max){
@@ -51,8 +52,13 @@ public class Input {
     }
 
     public double getDouble(){
-        return 0;
+//        System.out.println("Give me a decimal:");
+        return Double.parseDouble(scanner.nextLine());
     }
+//
+//    public double getRadius(double radius){
+//        return radius;
+//    }
 
 
 
