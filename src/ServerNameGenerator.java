@@ -1,35 +1,22 @@
 import javax.crypto.spec.PSource;
 import javax.imageio.stream.ImageInputStream;
 import java.util.Arrays;
+import java.util.Random;
 
 public class ServerNameGenerator {
 
-//    Create two arrays whose elements are strings: one with at least
-//        10 adjectives, another with at least 10 nouns.
+    public static String[] adjectives = {"Loud", "Bright", "Cheerful", "Pretty", "Difficult", "Grumpy", "Sunny", "Powerful", "Smart", "Ambitious"} ;
 
-    String[] adjectives = new String[10];
+    public static String[] nouns = {"Computer", "Car", "Bike", "Boy", "Girl", "Dog", "Pen", "Drink", "Horse", "Pool"} ;
 
-    String[] nouns = new String[10];
-
-
-
-    //    Create a method that will return a random element from an
-    //    array of strings.
-//    public static String getRandom(int) {
-//
-//        return ;
-//    }
-
-//    Add a main method, and inside of your main method select and random
-    //    noun and adjective and hyphenate the combination and display the
-//    generated name to the user.
-
-
-
-
-
-
-
-
+    public static void main(String[] args) {
+        System.out.println("Your server name is:");
+        System.out.println(getWord(adjectives) + "-" + getWord(nouns));
+    }
+    public static String getWord(String[] choices){
+        Random rnd = new Random();
+        int randomString = rnd.nextInt(choices.length);
+        return choices[randomString];
+    }
 
 }
